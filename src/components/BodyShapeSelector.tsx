@@ -1,5 +1,6 @@
 "use client";
 
+import { type ReactNode } from "react";
 import { motion } from "motion/react";
 
 interface BodyShape {
@@ -13,7 +14,7 @@ interface BodyShapeSelectorProps {
   onSelect: (shapeId: string) => void;
 }
 
-const shapeIcons: Record<string, JSX.Element> = {
+const shapeIcons: Record<string, ReactNode> = {
   rounded: (
     <svg viewBox="0 0 60 100" className="h-20 w-12">
       <ellipse cx="30" cy="18" rx="10" ry="12" fill="#f0c8a0" />
