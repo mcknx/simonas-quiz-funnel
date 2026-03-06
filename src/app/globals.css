@@ -2,25 +2,42 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a2e;
+  --primary: #e91e7b;
+  --primary-hover: #d11a6e;
+  --blue: #4a90d9;
+  --blue-hover: #3a7bc8;
+  --error: #e53935;
+  --card-border: #e8e8e8;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --bg-pink: #fff5f5;
+  --progress-inactive: #e0e0e0;
+  --water-blue: #2979ff;
+  --chart-orange: #ffb74d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-blue: var(--blue);
+  --color-blue-hover: var(--blue-hover);
+  --color-error: var(--error);
+  --color-card-border: var(--card-border);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-bg-pink: var(--bg-pink);
+  --color-progress-inactive: var(--progress-inactive);
+  --color-water-blue: var(--water-blue);
+  --color-chart-orange: var(--chart-orange);
+  --font-heading: var(--font-lato);
+  --font-body: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
